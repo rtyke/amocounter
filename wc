@@ -29,7 +29,7 @@ if __name__ == '__main__':
     parser.add_argument('-l', '--lines', help='Посчитает количество строк.', action='store_true')
     parser.add_argument('-w', '--words', help='Посчитает количество слов.', action='store_true')
     parser.add_argument('-c', '--chunks', help='Посчитает количество байт.', action='store_true')
-    parser.add_argument('files', metavar='FILE', nargs='*', help='Eсли файлы не переданы в качестве аргумента, то считывать из stdin.')
+    parser.add_argument('files', metavar='FILE', nargs='*', help='Eсли файлы не переданы в качестве аргумента, то считывать из stdin')
     args = parser.parse_args()
 
     with fileinput.input(files=args.files) as finput:
